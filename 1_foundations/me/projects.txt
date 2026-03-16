@@ -1,0 +1,476 @@
+================================================================================
+DR. KEVIN WESENDRUP
+Principal Data Scientist
+================================================================================
+
+Principal Data Scientist with 10+ years of experience in developing and scaling
+machine learning products, time series models, and causal inference systems.
+Strong expertise in SQL, Python, cloud architectures (AWS, Azure, GCP), and
+MLOps. Extensive experience leading international, cross-functional teams and
+building data-driven product cultures. Track record of delivering end-to-end ML
+solutions for automotive and industrial DAX companies.
+
+GitHub: https://github.com/kev-wes
+LinkedIn: https://www.linkedin.com/in/kevin-wesendrup
+
+EDUCATION
+• Ph.D. in Machine Learning (German grade 1.0 / ~GPA 4.0 / A+ / First Class)
+  University of Münster, Germany (2021–2024)
+• M.Sc. in Business Informatics (German grade 1.4 / ~GPA ~3.6 / A- / First Class)
+  University of Münster, Germany (2019)
+• B.A. in Business Informatics (German grade 1.7 / ~GPA 3.3 / B+ / Upper Second Class)
+  Westphalian University of Applied Sciences, Germany (2017)
+
+CORE LANGUAGES & TECH STACK
+• Computer Languages: SQL, Python (expert)
+• Human Languages: German, English (proficient)
+• Tools & Platforms: Azure, AWS, GCP, GitHub, Docker, Kedro, Kubernetes, LightGBM, 
+  MLflow, PostgreSQL, Snowflake, scikit-learn, VSCode
+
+================================================================================
+PROFESSIONAL EXPERIENCE
+================================================================================
+
+PRINCIPAL DATA SCIENTIST
+pacemaker.ai by thyssenkrupp
+October 2024 – Present | Remote, Germany
+• Leading data science chapter; developing coaching, mentoring, and skill concepts to drive innovation and creativity
+• Leading an international, cross-functional product team (14 people) to convert business requirements into machine learning products
+• Management of complex data science projects in the automotive and logistics industries
+
+RESEARCH SCIENTIST
+University of Münster
+September 2019 – September 2024 | Münster, Germany
+• Managed innovative data science and AI projects with leading enterprises (e.g., Volkswagen, BMW, ThyssenKrupp)
+• Published research in high-profile journals and presented breakthroughs at various conferences
+• Supervised 15+ Master's thesis projects across predictive maintenance, process optimization, and anomaly detection
+
+FREELANCE LECTURER
+University of Münster Professional School
+September 2022 – February 2024 | Münster, Germany
+• Lectured Master's programs "Data Science" (English) and "IT Management" (German)
+• Coordinated Supply Chain Management course for 200+ students
+
+SAP ANALYTICS ENGINEER
+TECE
+August 2013 – August 2019 | Emsdetten, Germany
+• Spearheaded predictive analytics projects and enterprise reporting initiatives
+• Architected analytics platforms serving enterprise clients across multiple industries
+
+DATA SCIENCE INTERN
+4flow
+March 2018 – September 2018 | Berlin, Germany
+• Drove machine learning and natural language processing for email automation
+• Developed NLP-based quality prediction system for operational transport optimization
+
+WEB DEVELOPMENT INTERN
+TL Computer Systems (Wales)
+November 2015 – December 2015 | Barry, United Kingdom
+• Developed motorsearch.co.uk automotive sales platform
+
+================================================================================
+PROFESSIONAL PROJECTS & TECHNICAL EXPERTISE
+================================================================================ 
+
+================================================================================
+WEB DEVELOPER @ TL Computer Systems
+================================================================================
+
+Project: Automotive Sales Platform Development
+• Architected and deployed production-grade vehicle marketplace platform (motorsearch.co.uk) using modern web framework with Docker containerization
+• Designed RESTful API architecture with PostgreSQL backend for vehicle inventory management
+• Implemented CI/CD pipeline using GitHub Actions for automated testing and deployment
+• Deployed platform on Azure App Service with auto-scaling capabilities
+
+Project: Vehicle Registration Query Optimization
+• Engineered cost-effective vehicle registration lookup service, reducing external API costs by 90%
+• Built intelligent caching layer using Redis and PostgreSQL for frequently accessed license plate queries
+• Implemented rate limiting and request batching to optimize third-party API usage
+• Deployed microservice architecture using Docker containers, reducing infrastructure costs from $10k to $1k monthly
+
+Technical Stack: Python, PostgreSQL, Docker, Azure, GitHub, Redis, RESTful APIs
+
+
+================================================================================
+DATA SCIENCE INTERN @ 4flow
+Natural Language Processing for Transport Operations
+================================================================================
+
+Project: AI-Driven Transportation Quality Optimization
+• Led NLP-based quality prediction system for operational transport optimization, processing 47,787 emails
+• Business Understanding: Analyzed dynamic balancing processes in transportation networks, identifying critical intervention points where ML could optimize operations and prevent costly exceptions
+• Data Understanding: Conducted comprehensive EDA on transport order (TO) communications, discovering multi-language patterns, classification imbalances, and GDPR requirements across 48 exception categories
+• Data Preparation: Built end-to-end ETL pipeline with pseudonymization (SHA-512 + salt, MD5 hashing) ensuring GDPR compliance while preserving analytical value
+
+Technical Architecture:
+• Developed production NLP pipeline: standardization → stop-word removal → contraction resolution → tokenization → lemmatization
+• Feature Engineering: Extracted 50+ features using nltk and spaCy (sentiment analysis with VADER, POS tagging, email metadata extraction via regex, TO ID extraction, email threading analysis, language detection)
+• Modeling: Implemented ensemble approach comparing Random Forest, SVM, and ANN architectures
+• Evaluation: Achieved 67% accuracy across 48 categories, with 92% accuracy for top-performing individual categories
+• Deployment: Trained models on AWS EC2 p2.xlarge instances (4 vCPUs, 61 GiB RAM, K80 GPUs) to handle sparse TF-IDF matrices
+
+Project: Email Exception Classification System
+• Built multi-class classifier to categorize transport exceptions from email communications
+• Developed text preprocessing pipeline handling multilingual content (German, English, Polish)
+• Addressed class imbalance using SMOTE and stratified sampling techniques
+• Implemented feature extraction using TF-IDF with sparse matrix optimization
+
+Agile Methodology:
+• Executed two-week Scrum sprints with 8 data science interns across 3 parallel workstreams
+• Managed tasks via Git/Asana, delivering TO Quality predictor, Email Classifier, and Workflow Analysis
+• Produced comprehensive ex-post documentation as project progressed
+
+Technical Stack: Python (nltk, spaCy, scikit-learn), AWS EC2, TF-IDF, Random Forest, SVM, ANN, Git, GDPR-compliant hashing
+
+
+================================================================================
+SENIOR ANALYTICS CONSULTANT @ TECE SE
+================================================================================
+
+Project: Delivery Service Analytics Platform & Performance Optimization
+• Architected enterprise analytics platform from scratch, improving on-time delivery rate from 87% to 95% over 3-year initiative
+• Business Understanding: Identified delivery service performance as critical bottleneck affecting customer satisfaction and revenue; estimated $2M+ annual impact from late deliveries
+• Data Understanding: Discovered that ERP system lacked proper mapping between order entries (1) and delivery line items (n); identified delta synchronization issues causing data discrepancies
+• Data Preparation: Designed and implemented custom SAP extractor for order fulfillment data with Layered Scalable Architecture (Acquisition → Propagation → Reporting → Visualization → Corporate Memory)
+• Modeling: Established KPI calculation framework measuring punctual deliveries within [-2d, +1d] window relative to planned delivery dates
+• Evaluation: Built interactive dashboards using treemaps, world maps, and KPI tachometers; validated data accuracy against physical deliveries
+• Deployment: Orchestrated production deployment with zero downtime to mission-critical ERP system
+
+Cross-Functional Leadership:
+• Built and led multidisciplinary team from Procurement, Logistics, Sales, and International Business units
+• Drove stakeholder alignment across technical (IT) and business domains (Sales, Controlling, SCM)
+
+Technical Stack: SAP Business Objects, SAP Design Studio, PostgreSQL, ETL pipelines, Data Warehouse design
+
+Project: AI-Driven Demand Forecasting for Integrated Business Planning
+• Established tournament-based ML forecasting framework evaluating multiple algorithms in production
+• Implemented ensemble forecasting using LightGBM, ARIMA, Prophet, and statistical baselines
+• Deployed MLflow for experiment tracking and model versioning across algorithm candidates
+• Built automated model selection logic choosing best-performing algorithm per product family
+• Integrated forecasts into annual budget planning spanning Sales, Demand, Supply, and Operations
+
+Project: Automated Reporting & Third-Party System Integration
+• Engineered automated monthly reporting pipelines for Sales and HR departments
+• Integrated non-SAP external data sources (HR systems, third-party vendors) into unified reporting layer
+• Reduced manual reporting effort by 80%, eliminating 200+ hours monthly
+
+Technical Stack: SAP BO Stack, Python, LightGBM, MLflow, PostgreSQL, Azure, automated ETL
+
+
+================================================================================
+RESEARCH SCIENTIST @ University of Münster
+Partner: Polymer Production Company (Project BK)
+================================================================================
+
+Project: Prescriptive Maintenance for Blown Film Extrusion
+• Architected end-to-end predictive maintenance system reducing unplanned downtime by 15% (50 days annually)
+• Business Understanding: Identified that unplanned machine failures cost $500k+ annually; maintenance strategy was purely reactive with no predictive capabilities
+• Data Understanding: Analyzed 1 year of sensor data at 0.1 Hz frequency (2M observations × 329 features) from extruder, blowhead, and winder systems; identified 256 unique production orders and 35 failure events
+• Data Preparation: Applied t-SNE dimensionality reduction on load variables; developed health indicator using Medjaher correlation method comparing operational sensors to healthy baseline; applied exponential smoothing and failure threshold normalization; used SMOTE to address severe class imbalance (35 failures in 2M observations)
+• Modeling: Reduced feature space via PCA (301 → 48 dimensions) maintaining 95% variance; applied DBSCAN clustering for product segmentation; trained failure classifier using Random Forest via scikit-learn and XGBoost; optimized recall metric using random search with 5-fold cross-validation
+• Evaluation: Achieved 94% accuracy, 91% recall, 0.93 ROC-AUC; conducted sensitivity analysis for sensor noise; validated prescriptive scheduling strategy via AnyLogic simulation across 2,000 runs (4 time horizons × 100 replications each); demonstrated 15% improvement vs reactive/scheduled maintenance
+• Deployment: Integrated progPy models for real-time machine condition simulation; built monitoring dashboard for production planning team; established alert thresholds at 2-sigma deviations
+
+Technical Innovations:
+• Developed corridor-based product clustering enabling new product anomaly detection
+• Created optimal machine parameter prediction for untested product codes
+• Implemented Granger causality testing with 10-minute lag for quality spike root cause analysis
+
+Technical Stack: Python (scikit-learn, XGBoost, progPy), PCA, DBSCAN, Random Forest, t-SNE, SMOTE, AnyLogic simulation, Azure ML
+
+
+================================================================================
+Partner: Heavy-Duty Vehicle Manufacturer (Project SCB)
+================================================================================
+
+Project: Predictive Maintenance for Commercial Trailers
+• Designed IoT-based predictive maintenance platform for brake systems, tire wear, and cooling units
+• Integrated external road condition APIs for contextual failure prediction
+• Built web-based monitoring platform deployed on Azure with real-time trailer health status
+• Implemented PostgreSQL database for telemetry data storage and historical analysis
+
+Technical Stack: Python, Azure IoT Hub, PostgreSQL, Docker, REST APIs, scikit-learn
+
+
+================================================================================
+Partner: Agricultural Machinery Corporation
+================================================================================
+
+Project: Tractor Sensor Analytics & Diagnostic Trouble Code Prediction
+• Business Understanding: Conducted requirements engineering workshop using Business Model Canvas to align stakeholders on predictive maintenance value proposition
+• Data Preparation: Engineered features from AXION tractor sensor telemetry for usage pattern clustering
+• Modeling: Built DTC (Diagnostic Trouble Code) prediction system using XGBoost and LightGBM
+• Evaluation: Achieved early warning capabilities 24-48 hours before failure events
+• Delivered proof-of-concept demonstrating predictive maintenance viability for agricultural equipment
+
+Project: Return Flow Process Optimization
+• Optimized reverse logistics processes ensuring product monitoring compliance
+• Analyzed return patterns identifying root causes for warranty claims and field failures
+• Built classification models predicting return reasons with 85% accuracy
+
+Technical Stack: Python, LightGBM, XGBoost, scikit-learn, Kedro (ML pipeline orchestration), GitHub, VSCode
+
+
+================================================================================
+Partner: Premium Automotive Manufacturer
+================================================================================
+
+Project: Advanced Spare Parts Forecasting Competition
+• Competed against major consulting firms (SAP, Blue Yonder, Roland Berger) in spare parts forecasting challenge
+• Business Understanding: Analyzed automotive aftermarket dynamics including new product launches, product lifecycle phase-outs, and substitution mechanics
+• Data Preparation: Integrated alternative data sources (Google Trends, macroeconomic indicators) with historical sales data; performed time series clustering to identify product families with similar demand patterns
+• Modeling: Developed hybrid forecasting approach combining LightGBM gradient boosting with classical time series methods (ARIMA, Exponential Smoothing)
+• Evaluation: Achieved MASE (Mean Absolute Scaled Error) of 1.08, securing 2nd place among 10 competitors (winner: 1.06, worst: 1.73)
+• Led team exploring modern demand sensing techniques using Google Trends correlation analysis
+
+Technical Stack: LightGBM, Python, scikit-learn, MLflow (experiment tracking), time series analysis, Azure ML, Kedro
+
+
+================================================================================
+Partner: Logistics & Warehousing Corporation
+================================================================================
+
+Project: Digital Warehouse Twin for Pick Path Optimization
+• Built digital twin synchronizing physical warehouse layout, ERP system, and logistics engineering platform
+• Developed AnyLogic simulation model optimizing pick paths and warehouse layout configurations
+• Reduced average pick time by 18% through data-driven layout reorganization
+• Deployed PostgreSQL database for real-time synchronization across three systems
+
+Technical Stack: AnyLogic simulation, PostgreSQL, Python, Azure, REST APIs
+
+
+================================================================================
+Partner: Automotive Retail Platform
+================================================================================
+
+Project: Cloud-Based Data Self-Service Architecture
+• Conceptualized cloud data platform for automotive dealership network
+• Conducted stakeholder interviews with major dealership operators to gather requirements
+• Designed AWS-based proof-of-concept architecture with Snowflake data warehouse
+• Implemented data ingestion pipelines using Azure Data Factory and AWS Glue
+• Built interactive dashboards enabling dealerships to analyze sales, inventory, and service metrics
+
+Technical Stack: AWS (S3, Glue, Redshift), Snowflake, Azure Data Factory, PostgreSQL, Docker, Kubernetes
+
+
+================================================================================
+Partner: Industrial Materials Manufacturer
+================================================================================
+
+Project: Risk-Based Steel Price Forecasting
+• Identified macroeconomic risk factors influencing steel price volatility (energy prices, GDP indicators, currency exchange rates)
+• Built multivariate forecasting model incorporating external economic indicators
+• Developed risk assessment tool for procurement teams to evaluate price fluctuation impacts
+• Achieved 12% improvement in procurement planning accuracy
+
+Technical Stack: Python, LightGBM, scikit-learn, time series analysis, MLflow, GitHub
+
+
+================================================================================
+Partner: Battery Research Institute
+================================================================================
+
+Project: Data-Driven Procurement Planning for Battery Production
+• Developed ML-based procurement optimization for electric vehicle battery manufacturing
+• Forecast raw material requirements (lithium, cobalt, nickel) based on production schedules
+• Implemented inventory optimization balancing holding costs against stockout risks
+
+Technical Stack: Python, LightGBM, optimization algorithms, PostgreSQL
+
+
+================================================================================
+ACADEMIC ACTIVITIES @ University Research Institute
+================================================================================
+
+Teaching & Mentorship:
+• Lectured Master's programs in Data Science (English) and IT Management (German)
+• Coordinated Supply Chain Management course for 200+ students
+• Supervised 15+ Master's thesis projects across predictive maintenance, process optimization, and anomaly detection domains
+
+Selected Thesis Supervision Projects:
+• Data-driven cost estimation for full-service maintenance contracts (commercial vehicles)
+• Process optimization through prescriptive maintenance integration (industrial packaging)
+• Diagnostic trouble code analysis using decision trees and random forests (agricultural machinery)
+• Maintenance process improvement via information system integration (automotive)
+• Steel surface defect detection using unsupervised anomaly detection (metallurgy)
+• Predictive maintenance for cooling units (commercial trailers)
+• Logistics 4.0 reference architecture design (packaging machinery)
+• Cloud migration process framework for ERP systems (consulting)
+• Assistive robotic picking systems (logistics)
+• Route optimization and cross-docking planning (retail)
+• Prescriptive maintenance solutions (agricultural equipment, chemical manufacturing)
+
+
+================================================================================
+PRINCIPAL DATA SCIENTIST @ thyssenkrupp pacemaker
+================================================================================
+
+Leadership & Team Development:
+• Built and led team of 7 data scientists, establishing first formal career development framework
+• Designed career progression path: Junior → Data Scientist → Senior → Staff → Lead → Principal
+• Created 6-dimensional skill radar framework (Technical, Product, Domain, Project, Communication, Innovation) across 3 proficiency levels
+• Established coaching and mentoring processes reducing annual attrition to <15%
+• Achieved 85% team satisfaction with career development initiatives
+• Extended career framework to Innovation Lab and Machine Learning Engineering departments
+
+Technical Stack for Team: GitHub, VSCode, Docker, Kubernetes, MLflow, Kedro, Azure ML, LightGBM, PostgreSQL, Snowflake
+
+
+================================================================================
+Project: Revenue Forecasting Engine
+================================================================================
+• Architected enterprise revenue forecasting system achieving <5% MAPE (Mean Absolute Percentage Error)
+• Business Understanding: Identified $10M+ annual revenue planning gap causing cash flow volatility
+• Data Preparation: Built unified data pipeline integrating CRM (Salesforce), ERP, and market data using Kedro framework
+• Modeling: Developed ensemble forecasting combining LightGBM, XGBoost, and time series decomposition
+• Deployment: Deployed containerized inference service on Azure Kubernetes Service (AKS) with MLflow model registry
+• Evaluation: Reduced forecast error from 18% to <5%, improving planning accuracy by 72%
+
+Technical Stack: Python, LightGBM, XGBoost, Kedro, MLflow, Azure Kubernetes Service, Docker, Snowflake, Postgres
+
+
+================================================================================
+Project: Pharmaceutical Demand Forecasting (Client: PharmaCo)
+================================================================================
+• Led forecasting initiative reducing pharmacy stockouts by 23%
+• Data Understanding: Analyzed 3 years of retail sales data across 2,500 pharmacies and 15,000 SKUs
+• Data Preparation: Built feature engineering pipeline in Kedro extracting seasonality, promotional effects, and competitive dynamics
+• Modeling: Implemented hierarchical forecasting with LightGBM, optimizing at national → regional → store level
+• Deployment: Orchestrated production deployment using Docker + Kubernetes on Azure with automated retraining pipelines
+• Evaluation: Achieved 23% stockout reduction while maintaining optimal inventory levels
+
+Technical Stack: LightGBM, Kedro, MLflow, Azure Kubernetes Service, Docker, Snowflake, PostgreSQL, scikit-learn, GitHub Actions
+
+
+================================================================================
+Project: Transport Capacity Prediction (Client: Fashion Retailer MPO)
+================================================================================
+• Built 6-week forward-looking forecast for transport capacity requirements
+• Data Preparation: Integrated marketing event calendars, holiday schedules, and promotional campaigns as exogenous features
+• Modeling: Developed multi-horizon LightGBM forecasting model with separate feature sets per horizon
+• Deployment: Implemented automated pipeline on Azure with Snowflake data warehouse integration
+• Enabled logistics team to optimize carrier contracts and reduce spot market dependency by 35%
+
+Technical Stack: LightGBM, Python, Snowflake, Azure ML, Kedro, MLflow, Docker
+
+
+================================================================================
+Project: Delivery Date Prediction (Client: Automotive OEM VXW)
+================================================================================
+• Led project reducing annual transportation misplanning by 63,000 full truckloads
+• Business Understanding: Identified that inaccurate delivery predictions caused $8M+ in expedited shipping and inventory carrying costs
+• Data Preparation: Integrated supplier data, production schedules, and logistics network constraints from Snowflake data warehouse
+• Modeling: Built gradient boosting model (LightGBM) predicting delivery dates with 92% accuracy (±1 day tolerance)
+• Deployment: Deployed as REST API on Azure Kubernetes Service with sub-100ms latency
+• Evaluation: Achieved 63k truckload reduction translating to $4.2M annual savings
+
+Technical Stack: LightGBM, Kubernetes, Docker, Azure, Snowflake, Kedro, MLflow, PostgreSQL, GitHub
+
+
+================================================================================
+Project: Component Demand Forecasting (Client: Automotive Supplier EBX)
+================================================================================
+• Led forecasting project for automotive component manufacturer
+• Data Preparation: Engineered 150+ features from budget plans, delivery schedules, order history, and schedule agreements in Kedro pipelines
+• Modeling: Built LightGBM time series regression model with custom loss function penalizing stockouts
+• Evaluation: Reduced WAPE (Weighted Absolute Percentage Error) by >20%
+• Deployment: Implemented automated retraining on Azure with MLflow experiment tracking
+
+Technical Stack: LightGBM, Kedro, MLflow, scikit-learn, Azure ML, Snowflake, Docker, VSCode
+
+
+================================================================================
+Project: Advanced Demand Forecasting (Client: Polymer Solutions RHU)
+================================================================================
+• Led forecasting initiative achieving >20% forecast error reduction for industrial polymer products
+• Data Understanding: Analyzed 5+ years of B2B sales data with complex customer ordering patterns and long lead times
+• Modeling: Developed custom LightGBM architecture with customer segmentation and product hierarchy
+• Deployment: Containerized solution deployed on Kubernetes with automated CI/CD via GitHub Actions
+• Integrated into client's S&OP (Sales & Operations Planning) process
+
+Technical Stack: LightGBM, Python, Kubernetes, Docker, GitHub Actions, Azure, Snowflake, Kedro, MLflow
+
+
+================================================================================
+Project: Reinforcement Learning-Based Inventory Replenishment (Patent Pending)
+================================================================================
+• Invented novel deep reinforcement learning algorithm for inventory optimization (Patent #10 2025 132 880.3)
+• Leadership: Led cross-functional team of 11 (1 PO, 2 Data Engineers, 1 UI/UX Designer, 4 Software Engineers, 1 Data Scientist, 1 Business Analyst, 2 ML Engineers)
+• Business Understanding: Identified gap in existing forecasting solution lacking prescriptive replenishment component; static heuristics limited competitive differentiation
+• Modeling: Architected custom RL environment with multi-objective reward function balancing inventory holding costs, stockouts, and order frequency; implemented policy gradient methods and actor-critic architectures
+• Evaluation: Conducted backtesting on 2+ years historical data plus Monte Carlo simulation; demonstrated 16% profit improvement vs baseline policy
+• Deployment: Positioned RL strategy as optional enhancement maintaining user trust; designed A/B testing framework for production validation
+• Led stakeholder management overcoming initial skepticism through transparency and incremental delivery
+
+Technical Architecture:
+• Built scalable RL training pipeline on Azure ML with GPU-accelerated compute
+• Implemented model versioning and experiment tracking via MLflow
+• Deployed inference service on Kubernetes with containerized Docker images
+• Integrated with existing forecasting platform using microservices architecture
+
+Technical Stack: Python (Stable-Baselines3, Gymnasium), Azure ML, Kubernetes, Docker, MLflow, PostgreSQL, GitHub, Kedro, LightGBM
+
+
+================================================================================
+SELECTED LEADERSHIP ACHIEVEMENTS
+================================================================================
+
+Establishing Data Science Career Framework (Materials Distribution Corp)
+• SITUATION: Joined high-growth AI startup leading 7 data scientists with no defined career progression, coaching, or mentoring; faced retention risk in competitive AI talent market
+• TASK: Design and implement career development framework preventing brain drain while driving continuous learning
+• ACTION: Created 4-tier career path (Junior → Data Scientist → Senior → Principal) evaluated across 6 dimensions (Technical, Product, Domain, Project, Communication, Innovation); developed skill matrix and coached individual contributors; established continuous learning culture; extended framework to ML Engineering and Innovation teams
+• RESULT: Achieved 85% team satisfaction with career development; maintained 85% annual retention; framework adopted organization-wide
+
+Commercializing Reinforcement Learning for Inventory (Materials Distribution UK)
+• SITUATION: Existing forecasting product lacked prescriptive capabilities; static heuristics limited competitive differentiation in crowded market
+• TASK: Design and deliver innovative RL-based replenishment module creating unique AI-driven value proposition
+• ACTION: Led 11-person cross-functional team; personally architected RL model including environment design and reward function; validated approach via backtesting and simulation; positioned RL as optional enhancement maintaining stakeholder trust
+• RESULT: Demonstrated 16% profit improvement; generated customer enthusiasm; advancing toward full productization as competitive differentiator
+
+Rescuing Failing Forecasting Initiative (Materials Distribution Corp)
+• SITUATION: Major client lost confidence in AI solution after initial model underperformed (only 30 features vs 900+ available); threatened contract cancellation
+• TASK: Rebuild client trust and demonstrate AI value proposition
+• ACTION: Educated client's controlling team on ML fundamentals and overfitting risks; developed feature selection framework; coordinated cross-functional delivery (delegated productization to ML Engineers, prioritization with PO); engaged C-level executive to present business case to client's budget owner
+• RESULT: Client adopted SaaS solution in monthly planning; achieved 10% WAPE reduction; generated $100k+ annual recurring revenue; client expanding scope to additional departments
+
+Pioneering Prescriptive Maintenance Solution (University Research Institute)
+• SITUATION: Packaging manufacturer facing significant production downtime with no predictive maintenance capabilities
+• TASK: Lead full-stack AI project from stakeholder alignment through technical delivery
+• ACTION: Recruited and mentored 8 students; taught ML and time series fundamentals; processed 2M observations applying PCA, DBSCAN, health indicators, and random forest classification (94% accuracy, 91% recall); aligned maintenance, data science, and production stakeholders
+• RESULT: Reduced downtime 15% (~50 days annually); changed operational behavior; solution deployed for production monitoring and planning
+
+
+================================================================================
+TECHNICAL EXPERTISE SUMMARY
+================================================================================
+
+Machine Learning & AI:
+• Advanced: LightGBM, XGBoost, scikit-learn, Random Forest, time series forecasting
+• Deep Learning: Neural networks, reinforcement learning (Stable-Baselines3, policy gradients)
+• NLP: nltk, spaCy, TF-IDF, VADER sentiment analysis
+• Techniques: SMOTE, PCA, t-SNE, DBSCAN, ensemble methods, feature engineering
+
+ML Operations & Infrastructure:
+• Orchestration: Kedro, MLflow, Azure ML
+• Containerization: Docker, Kubernetes (AKS)
+• CI/CD: GitHub Actions, Azure DevOps
+• Version Control: GitHub
+
+Data Engineering & Storage:
+• Databases: PostgreSQL, Snowflake
+• Cloud: Azure (App Service, Kubernetes, ML, IoT Hub, Data Factory), AWS (S3, Glue, EC2)
+• ETL: Data pipelines, Kedro frameworks
+
+Development Tools:
+• IDEs: VSCode
+• Languages: Python (expert), SQL
+• Frameworks: REST APIs, microservices architecture
+
+Specialized Skills:
+• Predictive/prescriptive maintenance
+• Demand forecasting & S&OP
+• Reinforcement learning
+• Time series analysis
+• NLP & text classification
+• A/B testing & experimentation
+• MLOps best practices
