@@ -292,6 +292,23 @@ Technical Stack: Python, LightGBM, optimization algorithms, PostgreSQL
 
 
 ================================================================================
+PROCESS Automation @ University Hospital UKM
+================================================================================
+
+Designed a smart hospital online self-service portal for patient admission at a major German university hospital, serving as the primary analyst from requirements elicitation through feature specification.
+
+Key Contributions:
+• Process Modeling: Mapped the end-to-end patient admission workflow as an 11-step EPC (Event-Driven Process Chain), identifying manual bottlenecks and digitization opportunities across scheduling, registration, diagnostics, treatment, and discharge phases
+• Requirements Engineering: Applied the Pohl (2010) framework to elicit and document 10 functional requirements (R1–R10) and 4 context system boundaries (B1–B4), covering system interactions with ORBIS HIS (hospital information system) and FASS (medical imaging portal)
+• Stakeholder Research: Conducted structured expert interviews with clinical and administrative staff to validate process assumptions and surface implicit constraints
+• Market & Benchmarking Analysis: Analyzed the US patient portal market (shaped by HITECH Act / Meaningful Use incentives) and the nascent German market (eHealth-Gesetz), and benchmarked UX patterns from the airline industry to inform portal feature design
+• Feature Design: Specified six core portal modules — online appointment scheduling, pre-admission patient registration, medical document upload, virtual waiting area with real-time status updates, indoor/outdoor navigation (OpenStreetMap integration), and structured data provision to clinical systems
+• Legal & Compliance: Incorporated German data protection constraints including §203 StGB (physician confidentiality) and §11 BDSG (prohibition on outsourcing personal health data to external cloud providers) into system boundary definitions
+
+Technical Stack: EPC process modeling, requirements engineering (Pohl 2010), ORBIS HIS integration, FASS API, OpenStreetMap, structured interview methodology
+
+
+================================================================================
 ACADEMIC ACTIVITIES @ University Research Institute
 ================================================================================
 
