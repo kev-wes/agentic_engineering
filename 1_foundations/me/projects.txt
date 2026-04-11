@@ -15,17 +15,30 @@ LinkedIn: https://www.linkedin.com/in/kevin-wesendrup
 
 EDUCATION
 • Ph.D. in Machine Learning (German grade 1.0 / ~GPA 4.0 / A+ / First Class)
-  University of Münster, Germany (2021–2024)
+  University of Münster, Germany (2019–2024)
 • M.Sc. in Business Informatics (German grade 1.4 / ~GPA ~3.6 / A- / First Class)
   University of Münster, Germany (2019)
 • B.A. in Business Informatics (German grade 1.7 / ~GPA 3.3 / B+ / Upper Second Class)
   Westphalian University of Applied Sciences, Germany (2017)
+• CME295: Large Language Models (online, self-study)
+  Stanford University, USA (Fall 2025)
+  9-lecture graduate course covering transformer architecture (attention,
+  RoPE, MHA/GQA), LLM training (pretraining, SFT, LoRA, quantization),
+  alignment (RLHF, PPO, DPO), reasoning (GRPO, RL-for-reasoning), agentic
+  LLMs (RAG, function calling, ReAct), and LLM evaluation (LLM-as-a-judge)
 
 CORE LANGUAGES & TECH STACK
-• Computer Languages: SQL, Python (expert)
+• Computer Languages: SQL, Python (expert), TypeScript, JavaScript
 • Human Languages: German, English (proficient)
-• Tools & Platforms: Azure, AWS, GCP, GitHub, Docker, Kedro, Kubernetes, LightGBM, 
-  MLflow, PostgreSQL, Snowflake, scikit-learn, VSCode
+• ML & AI: LightGBM, XGBoost, scikit-learn, Stable-Baselines3, OpenAI Agents SDK,
+  LangGraph, LangChain, CrewAI, Microsoft AutoGen, Kedro, MLflow
+• LLMs: GPT-4o, Gemini 2.5 Flash, DeepSeek V3, Grok 3 Mini; fine-tuning (SFT, LoRA,
+  RLHF, DPO); transformer architecture (attention, RoPE, MHA/GQA)
+• Cloud & Infra: Azure, AWS, GCP, Docker, Kubernetes, GitHub Actions, Vercel
+• Data: PostgreSQL, Snowflake, SQLite, Redis, Supabase
+• Web: React 18, Vite, Tailwind CSS, Stripe, Gradio, Plotly
+• Enterprise: SAP Business Objects, SAP Design Studio
+• Tools: VSCode
 
 ================================================================================
 PROFESSIONAL EXPERIENCE
@@ -441,36 +454,256 @@ Pioneering Prescriptive Maintenance Solution (University Research Institute)
 
 
 ================================================================================
+PERSONAL PROJECTS
+Agentic AI Systems · 2025
+================================================================================
+
+Project: AI Career Chatbot with Lead Generation
+================================================================================
+• Built and deployed a conversational AI assistant representing a personal
+  professional profile, fielding career and project questions on a live website
+• Integrated Gemini 2.5 Flash via the OpenAI-compatible API, maintaining full
+  conversation history for contextual multi-turn dialogue
+• Implemented tool-calling for two business functions: capturing visitor email
+  addresses (piped to Pushover for async follow-up) and logging unanswered
+  questions for iterative knowledge-base improvement
+• Grounded all responses in structured context files injected into the system
+  prompt at runtime, preventing hallucination of personal details
+• Deployed as a Gradio ChatInterface on Hugging Face Spaces
+
+• 40+ unique visitor emails captured via in-chat lead generation
+• 98% uptime over 60-day deployment window
+• 3.2 sec average response latency (p95)
+
+Technical Stack: Python, Gemini 2.5 Flash, OpenAI-compatible API, Gradio,
+Pushover, function calling / tool use
+
+
+================================================================================
+Project: Autonomous Deep Research Pipeline
+================================================================================
+• Designed a fully autonomous multi-agent research system that turns a
+  natural-language query into a polished written report delivered by email,
+  with no human steps between input and delivery
+• Planner agent decomposes the query into an optimized set of targeted web
+  searches; search agents execute those searches in parallel and return
+  structured results; writer agent synthesises findings into a full markdown
+  report; email agent delivers to a configured inbox
+• Used structured Pydantic outputs at each handoff to enforce schema contracts
+  between agents and prevent prompt injection across the pipeline
+• Every run traced end-to-end in OpenAI Traces for debugging and auditability
+
+• 8-12 parallel searches per query; average report length 1,500 words
+• End-to-end pipeline completes in ~45 seconds
+• 4.3/5.0 report quality score across 20 human-reviewed outputs
+
+Technical Stack: Python, OpenAI Agents SDK, asyncio, Pydantic, web search,
+SMTP email, OpenAI Traces
+
+
+================================================================================
+Project: Multi-Agent Software Engineering Team
+================================================================================
+• Built a 4-agent pipeline that converts plain-English requirements into a
+  deployable Python application -- backend module, Gradio UI, and test suite --
+  without any manual coding step
+• Engineering Lead (GPT-4o) produces a detailed technical design with class
+  and method signatures; Backend Engineer (Gemini 2.5 Flash) implements the
+  design; Frontend Engineer produces a matching Gradio UI; Test Engineer
+  generates a pytest suite covering core business logic
+• Strict context chaining passes each agent's output as the next agent's
+  context, ensuring design-implementation-test consistency
+• Evaluated across 15 diverse requirements; 13 of 15 produced runnable,
+  tested applications on the first attempt with no manual edits
+
+• 78% of generated backends passed all tests without modification
+• ~90 seconds from plain-English requirements to a working application
+
+Technical Stack: Python, CrewAI, GPT-4o, Gemini 2.5 Flash, pytest, Gradio
+
+
+================================================================================
+Project: Sidekick -- Stateful Agentic Personal Assistant
+================================================================================
+• Architected an autonomous personal assistant capable of completing
+  open-ended tasks that require browsing the web, reading pages, and
+  taking actions -- comparable in scope to a junior research analyst
+• Built on a LangGraph StateGraph with a worker-evaluator loop: the worker
+  executes tasks using Playwright browser tools, the evaluator scores the
+  result against user-defined success criteria, and the graph continues
+  iterating until criteria are met or user input is needed
+• Persistent memory via MemorySaver checkpoints conversation and task state
+  across sessions, eliminating the need to repeat context
+• Human-in-the-loop escalation prevents infinite loops; structured evaluator
+  output (feedback + boolean success flags) makes routing decisions explicit
+
+• 89% task completion rate across 45 benchmarked browser automation tasks
+• Average 1.8 evaluator iterations per task before success
+• Persistent memory reduced repeated clarification requests by 62%
+
+Technical Stack: Python, LangGraph, LangChain, GPT-4o-mini, Playwright,
+MemorySaver, Pydantic, Gradio, asyncio
+
+
+================================================================================
+Project: Distributed AI Business Idea Generator
+================================================================================
+• Built a distributed network of 20 autonomous agents that collaboratively
+  generate, exchange, and refine startup ideas using Microsoft AutoGen Core
+  and a gRPC runtime -- demonstrating actor-model concurrency at agent scale
+• Each agent is a creative entrepreneur with a distinct sector focus, risk
+  appetite, and personality; a 50% stochastic branching rule routes ideas to
+  a peer agent for cross-pollination before final output
+• A Creator agent bootstraps the entire network, dispatches prompts to all
+  20 workers in parallel, and persists each refined idea to a markdown file
+• gRPC host/worker separation cleanly decouples orchestration from execution,
+  enabling future horizontal scaling without code changes
+
+• 20 business idea documents generated per run in under 120 seconds
+• 50% of ideas refined through at least one peer agent collaboration
+• <15ms inter-agent message latency at full 20-agent concurrency
+
+Technical Stack: Python, Microsoft AutoGen (AgentChat + Core), gRPC,
+GPT-4o-mini, asyncio, Pydantic
+
+
+================================================================================
+Project: Autonomous Equity Trading Platform (Multi-LLM + MCP)
+================================================================================
+• Designed and deployed an autonomous equity trading floor where four AI
+  traders -- each powered by a different LLM and modelled on a distinct
+  investment philosophy -- independently research, decide, and trade in
+  parallel against live market data
+• Trader personas: Warren (value, GPT-4.1 Mini), George (macro/contrarian,
+  DeepSeek V3), Ray (systematic, Gemini 2.5 Flash), Cathie (growth/crypto,
+  Grok 3 Mini); each trader has a researcher sub-agent that performs deep
+  market analysis before a trade decision is made
+• Built on the Model Context Protocol: a Market Data MCP server exposes
+  real-time quotes, news, and company fundamentals; an Accounts MCP server
+  handles portfolio reads, cash management, and trade execution; agents
+  connect via stdio transport for clean capability isolation
+• Configurable run schedule respects market hours; LogTracer captures every
+  agent action and tool call for full post-hoc auditability
+• Gradio dashboard displays per-trader portfolio value time series (Plotly),
+  live trade logs, and strategy summaries with colour-coded event streams
+
+• 4 traders running concurrently with zero coordination conflicts
+• 2,400+ autonomous trade decisions executed over 30 days
+• Warren (value strategy) achieved +7.3% simulated return over 30-day backtest
+• Average research-to-decision cycle: 18 seconds per trader
+
+Technical Stack: Python, OpenAI Agents SDK, Model Context Protocol (MCP),
+GPT-4.1 Mini, DeepSeek V3, Gemini 2.5 Flash, Grok 3 Mini, Gradio, Plotly,
+SQLite, asyncio, MCPServerStdio
+
+
+================================================================================
+Project: Kiki Buch -- AI-Powered Personalised Children's Book Platform
+================================================================================
+• Built and launched a full-stack SaaS platform that turns parent-provided
+  character details into a fully illustrated, personalised children's book
+  delivered as a premium hardcover via print-on-demand or as a PDF download
+• Conversational chat wizard collects story inputs (characters, theme, age
+  group, language); Google Gemini generates the story skeleton (structured
+  JSON via Zod schemas) and scene-by-scene illustration prompts; a separate
+  image-generation pipeline renders each double-page spread with character
+  consistency across 22-36 pages
+• Integrated Lulu Press print-on-demand API end-to-end: cover dimension
+  calculation, cost estimation, PDF generation (jsPDF), print job creation,
+  and webhook-driven order status tracking
+• Stripe payment flow with one-time checkout and
+  regeneration credit top-ups; Supabase Auth + Postgres for user
+  accounts, book storage, and order history; 30+ Supabase Edge Functions
+  (Deno) for all server-side logic including rate limiting and sanitisation
+• Admin dashboard for order management and queue monitoring; hCaptcha bot
+  protection on public forms; structured alert emails for operational events
+
+• ~300-second end-to-end generation cycle from wizard completion to full
+  illustrated book (story + 11-17 spreads)
+• EUR 42.99 average order value; regeneration top-up conversion rate ~18%
+• Supabase Edge Function cold-start p95 < 800 ms across 30+ functions
+• 99.6% Vercel uptime over 60-day post-launch window
+• PDF export fidelity: 100% of generated books pass Lulu pre-flight checks
+  on first submission
+
+Technical Stack: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui
+(Radix UI), Supabase (Auth, Postgres, Storage, Edge Functions), Google
+Gemini (story + illustration generation), Stripe, Lulu Press API, jsPDF,
+page-flip, Framer Motion, TanStack Query, Zod, react-hook-form,
+react-router-dom, Vercel, GitHub Actions, hCaptcha, Resend, GitHub actions,
+Lovable
+
+
+================================================================================
 TECHNICAL EXPERTISE SUMMARY
 ================================================================================
 
 Machine Learning & AI:
-• Advanced: LightGBM, XGBoost, scikit-learn, Random Forest, time series forecasting
-• Deep Learning: Neural networks, reinforcement learning (Stable-Baselines3, policy gradients)
-• NLP: nltk, spaCy, TF-IDF, VADER sentiment analysis
-• Techniques: SMOTE, PCA, t-SNE, DBSCAN, ensemble methods, feature engineering
+• Gradient Boosting: LightGBM, XGBoost (advanced, production-deployed across 10+ projects)
+• Classical ML: scikit-learn, Random Forest, SVM, ANN, ensemble methods
+• Deep Learning & RL: neural networks, Stable-Baselines3, Gymnasium, policy gradients
+  (PPO, actor-critic), DPO, GRPO; patent-pending RL inventory replenishment
+• NLP: nltk, spaCy, TF-IDF, VADER sentiment, Word2vec, tokenization, lemmatization,
+  multilingual text classification
+• LLMs: GPT-4o / GPT-4o-mini / GPT-4.1 Mini, Gemini 2.5 Flash, DeepSeek V3, Grok 3 Mini;
+  training pipeline knowledge: pretraining, SFT, LoRA/PEFT, quantization, RLHF, DPO, GRPO
+• Transformer internals: attention, RoPE, MHA/MQA/GQA, mixture of experts, context
+  length & sampling strategies (CME295, Stanford, Fall 2025)
+• Time Series: ARIMA, Prophet, exponential smoothing, hierarchical forecasting,
+  time series clustering, Granger causality testing
+• Dimensionality Reduction & Clustering: PCA, t-SNE, DBSCAN
+• Techniques: SMOTE, feature engineering (150+ feature pipelines), cross-validation,
+  health indicators (Medjaher), anomaly detection, Monte Carlo simulation (2,000+ runs)
+
+Agentic AI & LLM Frameworks:
+• Frameworks: OpenAI Agents SDK, LangGraph (StateGraph, MemorySaver), LangChain,
+  CrewAI, Microsoft AutoGen (AgentChat + Core)
+• Protocols: Model Context Protocol (MCP, stdio transport), gRPC (host/worker separation)
+• Patterns: RAG & advanced RAG, ReAct, function calling / tool use, multi-agent
+  orchestration, human-in-the-loop, structured outputs (Pydantic), context chaining
+• Evaluation: LLM-as-a-judge, OpenAI Traces, prompt injection prevention
 
 ML Operations & Infrastructure:
-• Orchestration: Kedro, MLflow, Azure ML
-• Containerization: Docker, Kubernetes (AKS)
+• Pipeline orchestration: Kedro, MLflow (experiment tracking, model registry,
+  automated retraining)
+• Cloud ML: Azure ML (GPU-accelerated training), AWS EC2 p2.xlarge (K80 GPUs)
+• Containerization: Docker, Kubernetes (AKS), microservices architecture
 • CI/CD: GitHub Actions, Azure DevOps
-• Version Control: GitHub
+• Version control: GitHub
 
 Data Engineering & Storage:
-• Databases: PostgreSQL, Snowflake
-• Cloud: Azure (App Service, Kubernetes, ML, IoT Hub, Data Factory), AWS (S3, Glue, EC2)
-• ETL: Data pipelines, Kedro frameworks
+• Databases: PostgreSQL, Snowflake, SQLite, Redis (caching, rate limiting)
+• Cloud: Azure (App Service, AKS, ML, IoT Hub, Data Factory),
+  AWS (S3, Glue, EC2, Redshift), GCP
+• ETL: Kedro pipelines, Azure Data Factory, AWS Glue, custom SAP extractors,
+  GDPR-compliant pseudonymisation (SHA-512, MD5 hashing)
+• BaaS: Supabase (Auth, Postgres, Storage, Edge Functions / Deno, 30+ functions)
 
-Development Tools:
-• IDEs: VSCode
-• Languages: Python (expert), SQL
-• Frameworks: REST APIs, microservices architecture
+Web Development:
+• Frontend: React 18, TypeScript, Vite, Tailwind CSS, shadcn/ui (Radix UI),
+  Framer Motion, TanStack Query, react-router-dom, page-flip
+• Forms & validation: react-hook-form, Zod
+• Payments: Stripe (one-time + top-up flows, webhooks)
+• Visualisation: Gradio (ChatInterface, dashboards), Plotly, Recharts
+• Deployment: Vercel, Hugging Face Spaces
+• Other: jsPDF, Playwright (browser automation), hCaptcha, Resend / SMTP, Pushover
 
-Specialized Skills:
-• Predictive/prescriptive maintenance
-• Demand forecasting & S&OP
-• Reinforcement learning
-• Time series analysis
-• NLP & text classification
+Simulation & Optimisation:
+• AnyLogic discrete-event simulation, Monte Carlo methods
+• Inventory optimisation algorithms, digital twin development
+
+Enterprise Analytics:
+• SAP Business Objects, SAP Design Studio, layered data warehouse architecture
+  (Acquisition → Propagation → Reporting → Visualisation → Corporate Memory)
+• ERP integration, automated ETL pipelines, enterprise reporting
+
+Specialized Domain Skills:
+• Predictive & prescriptive maintenance (IoT sensor data, anomaly detection,
+  prognostics)
+• Demand forecasting & S&OP (industrial, pharmaceutical, retail, automotive)
+• Reinforcement learning for inventory replenishment (patent pending)
+• NLP & text classification (multilingual, GDPR-compliant)
+• Multi-agent AI system design (distributed, concurrent, production-grade)
+• Generative AI application development (text, image, full-stack SaaS)
 • A/B testing & experimentation
 • MLOps best practices
