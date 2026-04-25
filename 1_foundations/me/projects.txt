@@ -51,6 +51,17 @@ October 2024 – Present | Remote, Germany
 • Leading an international, cross-functional product team (14 people) to convert business requirements into machine learning products
 • Management of complex data science projects in the automotive and logistics industries
 
+LECTURER (ENTREPRENEURSHIP)
+University of Applied Sciences Münster
+April 2026 – Present | Münster, Germany
+• Lecturing Entrepreneurship at FH Münster, one of Germany's largest universities of applied sciences
+
+FOUNDER & LEAD BUILDER
+KIKI-BUCH.DE
+February 2026 – Present | Remote, Germany
+• Deployed production GenAI agents with tool calling, RAG, multi-turn dialogue; integrated Stripe, Supabase, and print-on-demand APIs
+• Owned full CI/CD, monitoring, and deployment (GitHub Actions, Vercel); 99.6% uptime
+
 RESEARCH SCIENTIST
 University of Münster
 September 2019 – September 2024 | Münster, Germany
@@ -64,7 +75,7 @@ September 2022 – February 2024 | Münster, Germany
 • Lectured Master's programs "Data Science" (English) and "IT Management" (German)
 • Coordinated Supply Chain Management course for 200+ students
 
-SAP ANALYTICS ENGINEER
+SAP ANALYTICS ENGINEER / BI CONSULTANT
 TECE
 August 2013 – August 2019 | Emsdetten, Germany
 • Spearheaded predictive analytics projects and enterprise reporting initiatives
@@ -137,7 +148,7 @@ Technical Stack: Python (nltk, spaCy, scikit-learn), AWS EC2, TF-IDF, Random For
 
 
 ================================================================================
-SENIOR ANALYTICS CONSULTANT @ TECE SE
+SENIOR BI/ANALYTICS CONSULTANT @ TECE SE
 ================================================================================
 
 Project: Delivery Service Analytics Platform & Performance Optimization
